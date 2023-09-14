@@ -1,0 +1,237 @@
+#wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.body {
+    position: relative;
+    margin: auto;
+    background-color: #fff;
+    padding-top: 48px;
+    width: 483px;
+    height: 583px;
+    border-radius: 8px;
+    animation: fadein 0.2s ease-in;
+    transition: all 0.2s ease-out;
+
+    >div:nth-child(1) {
+        padding: 0 58px;
+        height: 460px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(236, 237, 237);
+            border-radius: 10px;
+
+        }
+
+        >h1 {
+            margin: 16px 0px;
+            text-align: center;
+        }
+
+        >div {
+            border: 1px solid rgba(22, 24, 35, 0.12);
+            margin-bottom: 16px;
+            padding: 0 12px;
+            font-size: 1.5rem;
+            position: relative;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+
+    >div:nth-child(2) {
+        font-size: 1.2rem;
+        padding: 16px 60px;
+        text-align: center;
+        color: rgba(22, 24, 35, 0.5);
+
+    }
+
+    >span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(22, 24, 35, 0.03);
+        width: 40px;
+        height: 40px;
+        top: 24px;
+        right: 24px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.bodyDark {
+    position: relative;
+    margin: auto;
+    background: #252525;
+    padding-top: 48px;
+    width: 483px;
+    height: 583px;
+    border-radius: 8px;
+    animation: fadein 0.2s ease-in;
+    transition: all 0.2s ease-out;
+    color: #fff;
+
+    >div:nth-child(1) {
+        padding: 0 58px;
+        height: 460px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            // background-color: #252525;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(45, 45, 45);
+            border-radius: 10px;
+
+        }
+
+        >h1 {
+            margin: 16px 0px;
+            text-align: center;
+        }
+
+        >div {
+            border: 1px solid rgba(22, 24, 35, 0.12);
+            margin-bottom: 16px;
+            padding: 0 12px;
+            font-size: 1.5rem;
+            position: relative;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            background: rgb(46, 46, 46);
+            cursor: pointer;
+        }
+    }
+
+    >div:nth-child(2) {
+        font-size: 1.2rem;
+        padding: 16px 60px;
+        text-align: center;
+        color: #fff;
+        background-color: rgb(18, 18, 18);
+
+    }
+
+    >span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.04);
+        width: 40px;
+        height: 40px;
+        top: 24px;
+        right: 24px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.footerModal {
+    height: 64px;
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: unset !important;
+
+    >p {
+        font-size: 1.5rem;
+        color: rgba(22, 24, 35, 0.5);
+        // color: #fff;
+
+        >span {
+            color: rgb(254, 44, 85);
+            font-weight: 500;
+            margin-left: 5px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.footerModalDark {
+    height: 64px;
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: unset !important;
+
+    >p {
+        font-size: 1.5rem;
+        // color: rgba(22, 24, 35, 0.5);
+        color: #fff;
+
+        >span {
+            color: rgb(254, 44, 85);
+            font-weight: 500;
+            margin-left: 5px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.modalSignIn {
+    >div:nth-child(3) {
+        position: relative;
+    }
+}
+
+@keyframes fadein {
+    from {
+        transform: scale(15%);
+        opacity: 0.15;
+    }
+
+    to {
+        transform: scale(100%);
+        opacity: 1;
+    }
+}

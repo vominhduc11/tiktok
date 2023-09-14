@@ -1,0 +1,26 @@
+.grid {
+    display: flex;
+    width: 1105px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header {
+    border: 1px #e4e4e4 solid;
+    padding: 8px 0px;
+    border-right: none;
+    border-left: none;
+    height: 8.1vh;
+    display: flex;
+}
+
+#headerDark {
+    border: 1px #3e3e3e solid;
+    border-right: none;
+    border-left: none;
+    padding: 8px 0px;
+    background-color: #121212;
+    height: 8.1vh;
+    display: flex;
+}

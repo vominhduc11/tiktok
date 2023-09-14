@@ -1,0 +1,22 @@
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px #e4e4e4 solid;
+    padding: 8px 24px 8px 16px;
+    border-right: none;
+    border-left: none;
+    height: 8.1vh;
+}
+
+#headerDark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px #3e3e3e solid;
+    border-right: none;
+    border-left: none;
+    padding: 8px 24px 8px 16px;
+    background-color: #121212;
+    height: 8.1vh;
+}

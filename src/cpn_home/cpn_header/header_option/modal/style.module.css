@@ -1,0 +1,146 @@
+#wrap {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-animation: opcStyle 0.2s linear;
+          animation: opcStyle 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 1;
+}
+
+#bodyModal {
+  position: relative;
+  margin: auto;
+  background-color: #fff;
+  width: 400px;
+  height: 288px;
+  border-radius: 8px;
+  padding: 0 32px;
+  z-index: 1;
+  -webkit-animation: scaleStyle 0.2s ease;
+          animation: scaleStyle 0.2s ease;
+  transition: all 0.2s ease;
+}
+#bodyModal > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+#bodyModalDark {
+  position: relative;
+  margin: auto;
+  background-color: rgb(37, 37, 37);
+  width: 400px;
+  height: 288px;
+  border-radius: 8px;
+  padding: 0 32px;
+  z-index: 1;
+  color: #fff;
+  -webkit-animation: scaleStyle 0.2s ease;
+          animation: scaleStyle 0.2s ease;
+  transition: all 0.2s ease;
+}
+#bodyModalDark > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.title {
+  text-align: center;
+  padding: 36px 0 16px 0;
+}
+
+.likeVid {
+  border: 2px #000 solid;
+  height: 19px;
+  width: 19px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.likeVidDark {
+  border: 2px #fff solid;
+  height: 19px;
+  width: 19px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.optVol {
+  border: 2px #000 solid;
+  height: 19px;
+  width: 19px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.optVolDark {
+  border: 2px #fff solid;
+  height: 19px;
+  width: 19px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+@-webkit-keyframes scaleStyle {
+  from {
+    transform: scale(15%);
+    opacity: 0.15;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleStyle {
+  from {
+    transform: scale(15%);
+    opacity: 0.15;
+  }
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opcStyle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opcStyle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=style.module.css.map */
